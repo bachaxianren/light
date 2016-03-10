@@ -1,0 +1,758 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<title>水街</title>
+		<link rel="stylesheet" href="css/index.css?201603100913" />
+		<script src="js/adaptation.js"></script>
+	</head>
+	<body>
+		<!--loading页-->
+		<div id="loading">
+			<div class="content">
+				<img src="img/logo-2.png" alt="" />
+				<div class="progress-bar">
+					<div class="progress"></div>
+				</div>
+				<em class="hint"></em>
+			</div>
+		</div>
+		
+		<div id="wrap">
+			<a href="javascript:void(0);" class="bgm play"></a>
+			<!--水街首页-->
+			<div class="page page-1">
+				<div class="icon-title"></div>
+				<div class="icon-logo"></div>
+				<div class="icon-hero"></div>
+				<a href="javascript:void(0);" class="icon-super"></a>
+				<a href="javascript:void(0);" class="icon-active"></a>
+				<a href="javascript:void(0);" class="icon-life"></a>
+			</div>
+			
+			<!--节电超人页-->
+			<div class="page page-2">
+				<a href="javascript:void(0);" class="goback ui-button">返回</a>
+				<div class="icon-title-2"></div>
+				<div class="footer">
+					<a href="javascript:void(0);" class="guide ui-button">开始游戏</a>
+					<div class="btn-group">
+						<a href="javascript:void(0);" class="rules ui-button">活动规则</a>
+						<a href="javascript:void(0);" class="prizes ui-button">查看奖品</a>
+					</div>
+				</div>
+			</div>
+			
+			<!--精彩活动页-->
+			<div class="page page-3">
+				<div id="d1">
+					<img class="title" src="img/title1.png"/>
+					<div class="picBox">
+						<img class="pic" src="img/img1.png"/>
+					</div>
+					<img class="flower" src="img/bgFlower.png">
+					<p class="text3">活动时间：3月19日—3月22日</p>
+					<p class="text4">
+						用空水瓶与夜光涂料制作一面夜光墙。<br>
+						墙面绘制成超人的S图标，S为save的缩写，<br>
+						象征着拯就地球和节约能源。<br>
+					</p>
+					<a href="javascript:void(0)"; class="btn1">返回首页</a>
+				</div>
+				<div id="d2" class="hide">
+					<img class="title" src="img/title2.png"/>
+					<div class="picBox">
+						<img class="pic" src="img/img2.png"/>
+					</div>
+					<img class="flower" src="img/bgFlower.png">
+					<p class="text3">活动时间：3月19日当天</p>
+					<p class="text4">
+						用行走的脚印绘制树叶，<br>
+						通过众人的力量完成一个葱郁的大树。<br>
+						在植树节节点开展此活动，<br>
+						号召广大市民保护树木，保护环境。<br>
+					</p>
+					<a href="javascript:void(0);" class="btn1">返回首页</a>
+				</div>
+				<div id="d3" class="hide">
+					<img class="title" src="img/title3.png"/>
+					<div class="picBox">
+						<img class="pic" src="img/img3.png"/>
+					</div>
+					<img class="flower" src="img/bgFlower.png">
+					<p class="text3">活动时间：3月26日</p>
+					<p class="text4">
+						地球一小时，不插电音乐会。<br>
+						结合乐队开展持续1小时的低碳音乐会，<br>
+						用音乐点亮世界。<br>
+					</p>
+					<a href="javascript:void(0);" class="btn1">返回首页</a>
+				</div>
+				<a href="javascript:void(0);" class="arrowLeft"></a>
+				<a href="javascript:void(0);" class="arrowRight"></a>
+			</div>
+			
+			<!--低碳生活页-->
+			<div class="page page-4">
+				<p class="text1">
+					少开1小时空调，减少碳排放621克<br>
+					少看1小时电视，减少碳排放96克<br>
+					少用1小时洗衣机，减少碳排放180克<br>
+					少用1小时电脑，减少碳排放190克<br>
+					少开1小时车，减少碳排放22000克<br>
+					外出散步1小时，减少碳排放2254克<br>
+					熄灯1小时，少用一度电减少碳排放785克<br>
+					1小时不坐电梯，少坐一层减少碳排放218克<br>
+				</p>
+				<p class="text2">参与环保活动商户（排名不分先后）：</p>
+				<img src="img/logo.png"/>
+				<a href="javascript:void(0);" class="btn1">返回首页</a>
+			</div>
+			
+			<!--游戏页-->
+			<div class="page page-5">
+				<div class="icon-cd-title"></div>
+				<div class="countDown">
+					<div class="icon-battery-bg">
+						<div class="batery-box">
+							<div class="icon-battery"></div>
+						</div>
+					</div>
+					<em class="second">20</em>s
+				</div>
+				
+				<ul class="game-panel">
+					
+				</ul>
+				
+				<!--引导页-->
+				<div class="guide-page">
+					<div class="icon-tip">
+						<div class="content">游戏开始后，点击灯亮着的窗户，可以关灯，但是要注意周围窗户的变化，一定要关闭所的灯哦。</div>
+					</div>
+					<div class="icon-hero"></div>
+					<a href="javascript:void(0);" class="ui-button startGame">开始游戏</a>
+				</div>
+			</div>
+			
+			<!--积分兑换页&&我的奖品页-->
+			<div class="page page-6">
+				<ul class="ui-tab">
+					<li>积分兑换</li>
+					<li class="cur">我的奖品</li>
+				</ul>
+				<div class="tab-contanier">
+					<!--积分兑换-->
+					<div class="tab-content change-content" style="display: none;">
+						<div class="score">我的积分 <em>99999</em></div>
+						<div class="title">
+							<span class="col-1">奖品</span>
+							<span class="col-2">剩余</span>
+							<span class="col-3">积分</span>
+						</div>
+						<ul class="change-list">
+							<li>
+								<span class="col-1">DrUSB净化器</span>
+								<span class="col-2">20</span>
+								<span class="col-3">70</span>
+								<a href="javascript:void(0);" class="change" data-id="123">兑换</a>
+							</li>
+							<li>
+								<span class="col-1">小米充电宝</span>
+								<span class="col-2">50</span>
+								<span class="col-3">50</span>
+								<a href="javascript:void(0);" class="change" data-id="456">兑换</a>
+							</li>
+							<li>
+								<span class="col-1">定制环保袋</span>
+								<span class="col-2">100</span>
+								<span class="col-3">40</span>
+								<a href="javascript:void(0);" class="change" data-id="789">兑换</a>
+							</li>
+						</ul>
+					</div>
+					
+					<!--我的奖品-->
+					<div class="tab-content prize-content">
+						<!--暂无奖品-->
+						<div class="no-prize">
+							暂无奖品
+						</div>
+						
+						<!--有奖品-->
+						<div class="have-prize" style="display: none;">
+							<div class="title clearfix">
+								<span class="col-1">奖品</span>
+								<span class="col-2">兑换码</span>
+							</div>
+							<ul class="prize-list">
+								<li class="clearfix" data-effective="有效期至4月30日" data-rule="无使用规则">
+									<span class="col-1">赤坂亭20元午市套餐抵用券</span>
+									<span class="col-2">XXXXXX</span>
+								</li>
+								<li class="clearfix" data-effective="有效期至4月30日" data-rule="无使用规则">
+									<span class="col-1">籣薇西点10元现金券</span>
+									<span class="col-2">XXXXXX</span>
+								</li>
+								<li class="clearfix" data-effective="有效期至4月30日" data-rule="无使用规则">
+									<span class="col-1">椰子鸡20元现金券</span>
+									<span class="col-2">XXXXXX</span>
+								</li>
+								<li class="clearfix" data-effective="有效期至4月30日" data-rule="无使用规则">
+									<span class="col-1">Kellibabor80元现金券</span>
+									<span class="col-2">XXXXXX</span>
+								</li>
+								<li class="clearfix" data-effective="有效期至4月30日" data-rule="无使用规则">
+									<span class="col-1">正新鸡排一份</span>
+									<span class="col-2">XXXXXX</span>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="recieve-rule">
+							<div class="title">领取规则</div>
+							<div class="content">
+								<p>1、除“优惠券”外，所有奖品请于2016年3月29日20点前，到水街各商户处凭兑换码领取。</p>
+								<p>2、各类“优惠券”，请于2016年3月29日 20点前，到水街对应商铺凭兑换码领取。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="javascript:void(0);" class="layer-close ui-button bright">返回游戏</a>
+			</div>
+			
+		</div>
+		
+		<!--分享-->
+		<div class="share-box">
+			<div class="icon-arrow"></div>
+			<div class="share-text">点击这里分享给好友~</div>
+		</div>
+		
+		<div style="display: none;">
+			<!--游戏规则-->
+			<div id="rules-box">
+				<div class="icon-rule-title common-title"></div>
+				<div class="content">
+					<p>1、游戏开始30秒内，关闭楼中的所有点灯，即可通关；</p>
+					<p>2、过关可获得环保积分或者环保礼盒；</p>
+					<p>3、每天有三次失败机会；</p>
+					<p>4、请于2016年3月29日 20点前，到水街对应商户处凭兑换码领取奖励；</p>
+					<p>5、活动时间：</p>
+					<p>2016.3.11.-2016.3.29.</p>
+					<a href="javascript:void(0);" class="layer-close ui-button">返回首页</a>
+				</div>
+			</div>
+			
+			<!--兑换成功-->
+			<div id="change-success-box">
+				<div class="icon-exchange-title-1 common-title"></div>
+				<p class="prizeName"></p>
+				<p class="vcode">兑换码：<em></em></p>
+				<p class="tip">请于2016年3月29日 20点前，<br />到<em class="">水街商户处</em>凭兑换码领取奖励</p>
+				<a href="javascript:void(0);" class="ui-button change-close">确定</a>
+			</div>
+			
+			<!--兑换失败-->
+			<div id="change-fail-box">
+				<div class="icon-fail-title common-title"></div>
+				<div class="txt">您的积分不足！</div>
+				<a href="javascript:void(0);" class="ui-button change-close">确定</a>
+			</div>
+			
+			<!--过关积分奖励-->
+			<div id="credit-box">
+				<div class="icon-success-title common-title"></div>
+				<div class="txt">您获得了环保积分<em></em></div>
+				<div class="btn-group">
+					<a href="javascript:void(0);" class="ui-button jump-change">积分兑换</a>
+					<a href="javascript:void(0);" class="ui-button share">邀请好友</a>
+				</div>
+			</div>
+			
+			<!--过关礼盒奖励-->
+			<div id="gift-box">
+				<div class="icon-success-title common-title"></div>
+				<div class="txt">您获得了一个<em>环保礼盒</em></div>
+				<div class="icon-box"></div>
+				<p class="tip">点击图片打开礼盒</p>
+			</div>
+			
+			<!--奖品使用规则-->
+			<div id="prize-detail">
+				<p class="effective">使用时间：<em></em></p>
+				<p class="rule">使用规则：<em></em></p>
+				<a href="javascript:void(0);" class="ui-button change-close">确定</a>
+			</div>
+			
+			<!--没中奖-->
+			<div id="no-award-box">
+				<div class="title">抱歉，没有中奖</div>
+				<p class="tip">别灰心，3月12日-18日，每天都有奖品等你来拿。</p>
+				<div class="btn-group">
+					<a href="javascript:void(0);" class="ui-button layer-close">返回游戏</a>
+					<a href="javascript:void(0);" class="ui-button share">邀请好友</a>
+				</div>
+			</div>
+			
+			<!--中奖-->
+			<div id="award-box">
+				<div class="title">恭喜您，获得了</div>
+				<p class="prizeName"></p>
+				<p class="vcode">兑换码：<em></em></p>
+				<p class="tip">请于<em>2016年3月29日 20点</em>前，<br />到<em class="">水街商户处</em>凭兑换码领取奖励</p>
+				<div class="btn-group">
+					<a href="javascript:void(0);" class="ui-button prizes">查看奖品</a>
+					<a href="javascript:void(0);" class="ui-button share">邀请好友</a>
+				</div>
+			</div>
+			
+			<!--次数用完-->
+			<div id="runout-box">
+				<div class="title">挑战次数已用尽</div>
+				<p class="tip">每天最多只能挑战3次，3月12日-18日，每天都有奖品等你来拿。</p>
+				<div class="btn-group">
+					<a href="javascript:void(0);" class="ui-button layer-close">返回游戏</a>
+					<a href="javascript:void(0);" class="ui-button share">邀请好友</a>
+				</div>
+			</div>
+			
+			<!--已经过关-->
+			<div id="runout-box2">
+				<div class="title">您今天已经通关了</div>
+				<p class="tip">每天可以胜利通关1次 ，3月12日-18日，每天都有奖品等你来拿</p>
+				<div class="btn-group">
+					<a href="javascript:void(0);" class="ui-button layer-close">返回游戏</a>
+					<a href="javascript:void(0);" class="ui-button share">邀请好友</a>
+				</div>
+			</div>
+			
+			<!--未过关次数未用完-->
+			<div id="continue-box">
+				<div class="title">很遗憾，电量耗尽了</div>
+				<p class="tip">别灰心，再来一次吧，您今天还有<em></em>次挑战机会。</p>
+				<div class="btn-group">
+					<a href="javascript:void(0);" class="ui-button startGame">再来一次</a>
+					<a href="javascript:void(0);" class="ui-button share">邀请好友</a>
+				</div>
+			</div>
+			
+			<!--活动结束-->
+			<div id="ending-box">
+				<div class="title">抱歉，活动已经结束</div>
+				<a href="javascript:void(0);" class="ui-button change-close">返回首页</a>
+			</div>
+		</div>
+		
+		<script src="js/zepto.min.js"></script>
+		<script src="js/imageLoad.js"></script>
+		<script src="js/soundjs-NEXT.min.js"></script>
+		<script src="js/layer.m/layer.m.js"></script>
+		<script src="js/game.js?20160309"></script>
+		<script>
+			var pass = false;
+			
+			//加载图片资源
+			var loadList = [
+				'img/loading_bg.jpg',
+				'img/icon-se089aad503.png',
+				'img/index_bg.jpg',
+				'img/game_index.jpg',
+				'img/game.jpg'
+			];
+			
+			imgLoader.init(loadList, function() {
+				$("#loading").hide();
+				$("#wrap").show();
+				$(".page-1").addClass("show");
+			},function(e){
+				$(".progress").width(e+"%");
+				$(".hint").text(e+"%");
+			}).load();
+			
+			createjs.Sound.on("fileload", handleLoadComplete);
+			createjs.Sound.alternateExtensions = ["mp3"];
+			createjs.Sound.registerSound({src:"audio/2.mp3", id:"sound"});
+			function handleLoadComplete(event) {
+		    	createjs.Sound.play("sound",{loop: -1});
+			}
+			
+			;$.isPC = navigator.platform.indexOf('Win') >= 0 ? true : false;
+			
+			var CLICK = $.isPC ? 'click' : 'touchstart';
+			
+			var remind = function(content,time){
+				var str= '<div class="modal"><div id="remind" class="icon-remind-bg"><div class="content">'+content+'</div></div></div>';
+				$('body').append(str);
+				var time = time?time:1500;
+				setTimeout(function(){
+					$(".modal").remove();
+				},time);
+			};
+			
+			$(function(){
+				var isEnding = false;  //活动是否结束                 
+				/**
+				* 实例点灯游戏
+				* @param {Function} success             游戏成功的回调函数
+				* @param {Function} failed              游戏失败的回调函数
+				* @param {Function} overTime            游戏次数用完
+				* @param {Number}   timeout             倒计时时间
+				* @param {Number}   count               游戏次数
+				*/
+				var light = new Light({
+					bindBox: ".game-panel",
+					countDown: ".second",
+					timeout: 20,
+					count: 3,
+					success: function(){
+						this.clearCD();
+						//游戏成功向后台发起请求，获取奖品类型 prizeType=1 积分奖励，prizeType=2 礼盒
+						pass = true;
+						
+						$.ajax({
+							type:"get",
+							url:"test.json",
+							dataType: 'json',
+							data: {},
+							success: function(data){
+								var prizeType = data.prizeType;
+								if(prizeType=="1"){
+									//积分奖励
+									var credit = data.credit;
+									$("#credit-box em").text(credit);
+									
+									//更新积分
+									var total = parseInt($(".score em").text());
+									$(".score em").text(total+parseInt(credit));
+									
+									layer.open({
+										content: $("#credit-box")[0].outerHTML,
+										shadeClose: false
+									});
+								}else{
+									//礼盒奖励
+									layer.open({
+										content: $("#gift-box")[0].outerHTML,
+										shadeClose: false
+									});
+								}
+							}
+						});
+					},
+					failed: function(){
+						var count = this.count;
+						$("#continue-box .tip em").text(count);
+						if(count==0){
+							layer.open({
+								content: $("#runout-box")[0].outerHTML,
+								shadeClose: false
+							});
+						}else{
+							layer.open({
+								content: $("#continue-box")[0].outerHTML,
+								shadeCLose: false
+							});
+						}
+						
+					},
+					overTime: function(){
+						layer.open({
+							content: $("#runout-box")[0].outerHTML,
+							shadeClose: false
+						});
+					}
+				});
+				
+				//抽奖
+				var flag = false;
+				$(document).on(CLICK,".icon-box",function(){
+					if(!flag){
+						flag = true;
+						var instance = this;
+						$(instance).addClass('shake');
+						instance.addEventListener("webkitAnimationEnd", function(){
+							$.ajax({
+								type:"get",
+								url:"test.json",
+								dataType: 'json',
+								data: {},
+								success: function(data){
+									var isAward = data.isAward;
+									if(isAward){
+										var prizeName = data.prizeName;
+										var vcode = data.vcode;
+										var effective = data.effective;
+										var rule = data.rule;
+										$(".prizeName").text(prizeName);
+										$(".vcode em").text(vcode);
+										layer.open({
+											content: $("#award-box")[0].outerHTML,
+											shadeClose: false
+										});
+										//更新奖品列表
+										var li = '<li class="clearfix" data-effective="'+effective+'" data-rule="'+rule+'">'+
+													'<span class="col-1">'+prizeName+'</span>'+
+													'<span class="col-2">'+vcode+'</span>'+
+												'</li>';
+										
+										$(".prize-list").append(li);
+										$(".have-prize").show();
+										$(".no-prize").hide();
+									}else{
+										layer.open({
+											content: $("#no-award-box")[0].outerHTML,
+											shadeClose: false
+										})
+									}
+									//light.count = 0;
+								}
+							});
+						})
+					}
+				});
+				
+				//节电超人
+				$(".icon-super").on(CLICK,function(){
+					$(".page").hide().removeClass("show");
+					$(".page-2").show().addClass("show");
+				});
+				
+				//低碳生活
+				$(".icon-life").on(CLICK,function(){
+					$(".page").hide().removeClass("show");
+					$(".page-4").show();
+				});
+				
+				//引导
+				$(".guide").on(CLICK,function(){
+					if(isEnding){
+						//活动结束
+						layer.open({
+							content: $("#ending-box")[0].outerHTML,
+							shadeClose: false
+						});
+						return;
+					}
+					
+					if(pass){
+						layer.open({
+							content: $("#runout-box2")[0].outerHTML,
+							shadeClose: false
+						});
+						return;
+					}
+					
+					if(light.count==0){
+						layer.open({
+							content: $("#runout-box")[0].outerHTML,
+							shadeClose: false
+						});
+						return;
+					}
+					
+					$(".page").hide().removeClass("show");
+					$(".guide-page").show();
+					$(".page-5").show();
+				});
+				
+				//开始游戏
+				var isFirst = true;
+				$(document).on(CLICK,".startGame",function(){
+					layer.closeAll();
+					$(".guide-page").hide();
+					light.startCD();
+				});
+				
+				//游戏规则
+				$(".rules").on(CLICK,function(){
+					layer.open({
+						content: $("#rules-box")[0].outerHTML,
+						shadeClose: false,
+						className: "layer-rule"
+					})
+				});
+				
+				//我的奖励
+				$(document).on(CLICK,".prizes",function(){
+					layer.closeAll();
+					$(".page").removeClass("show").hide();
+					$(".page-6").addClass("show").show();
+					$(".ui-tab li").removeClass("cur");
+					$(".ui-tab li").eq(1).addClass("cur");
+					$(".tab-contanier .tab-content").hide();
+					$(".tab-contanier .tab-content").eq(1).show();
+				});
+				
+				//奖品使用规则
+				$(document).on(CLICK,".prize-list li",function(){
+					var effective = $(this).data("effective");
+					if(!effective){
+						return;
+					}
+					var rule = $(this).data("rule");
+					$(".effective em").text(effective);
+					$(".rule em").text(rule);
+					layer.open({
+						content: $("#prize-detail")[0].outerHTML,
+						shadeClose: false
+					});
+				});
+				
+				//tab
+				$(".ui-tab li").on(CLICK,function(){
+					var idx = $(this).index();
+					if($(this).hasClass("cur")){
+						return;
+					}
+					$(".ui-tab li").removeClass("cur");
+					$(this).addClass("cur");
+					$(".tab-content").hide();
+					$(".tab-content").eq(idx).show();
+				});
+				
+				//兑换
+				var isChange = false;
+				
+				$(".change").on(CLICK,function(){
+					var instance = this;
+					if(isChange){
+						return;
+					}
+					isChange = true;
+					var id=$(this).data("id");
+					$.ajax({
+						type:"get",
+						url:"test.json",
+						dataType: 'json',
+						data: {id:id},
+						success: function(data){
+							isChange = false;
+							if(data.change){
+								//兑换成功
+								var prizeName = data.prizeName;
+								var vcode = data.vcode;
+								$(".prizeName").text(prizeName);
+								$(".vcode em").text(vcode);
+								
+								//更新剩余数量
+								$(instance).siblings(".col-2").text(parseInt($(instance).siblings(".col-2").text())-1);
+								
+								//更新积分
+								var total = parseInt($(".score em").text());
+								var changescore = parseInt($(instance).siblings(".col-3").text())
+								$(".score em").text(total-changescore);
+								
+								layer.open({
+									content: $("#change-success-box")[0].outerHTML,
+									shadeClose: false
+								});
+								
+								//更新奖品列表
+								var li = '<li class="clearfix">'+
+											'<span class="col-1">'+prizeName+'</span>'+
+											'<span class="col-2">'+vcode+'</span>'+
+										'</li>';
+								$(".prize-list").append(li);
+								
+								$(".have-prize").show();
+								$(".no-prize").hide();
+								
+							}else{
+								//兑换失败
+								layer.open({
+									content: $("#change-fail-box")[0].outerHTML,
+									shadeClose: false,
+									className: "layer-common"
+								});
+							}
+						}
+					});
+				});
+				
+				//关闭兑换窗口
+				$(document).on(CLICK,".change-close",function(){
+					layer.closeAll();
+				});
+				
+				//跳转到积分兑换窗口
+				$(document).on(CLICK,".jump-change",function(){
+					layer.closeAll();
+					$(".page").removeClass("show").hide();
+					$(".page-6").addClass("show").show();
+					$(".ui-tab li").removeClass("cur");
+					$(".ui-tab li").eq(0).addClass("cur");
+					$(".tab-contanier .tab-content").hide();
+					$(".tab-contanier .tab-content").eq(0).show();
+				});
+				
+				//返回首页
+				$(document).on(CLICK,".layer-close",function(){
+					layer.closeAll();
+					$(".page").hide().removeClass("show");
+					$(".page-2").addClass("show").show();
+				});
+				
+				//分享
+				$(document).on(CLICK,".share",function(){
+					$(".share-box").show();
+				});
+				
+				$(".share-box").on(CLICK,function(){
+					$(this).hide();
+				});
+				
+				$(".btn1,.goback").on(CLICK,function(){
+					$(".page").hide();
+					$(".page-1").addClass("show").show();
+				});
+				
+				var type=1;
+				$(".arrowLeft").on('click',function(){
+					type--;
+					if (type<1) type=3;
+					$("#d1").addClass("hide");
+					$("#d2").addClass("hide");
+					$("#d3").addClass("hide");
+					if (type==1) $("#d1").removeClass("hide");
+					if (type==2) $("#d2").removeClass("hide");
+					if (type==3) $("#d3").removeClass("hide");
+				});
+	
+				$(".arrowRight").on('click',function(){
+					type++;
+					if (type>3) type=1;
+					$("#d1").addClass("hide");
+					$("#d2").addClass("hide");
+					$("#d3").addClass("hide");
+					if (type==1) $("#d1").removeClass("hide");
+					if (type==2) $("#d2").removeClass("hide");
+					if (type==3) $("#d3").removeClass("hide");
+				});
+				
+				$(".icon-active").on(CLICK,function(){
+					$(".page").removeClass("show").hide();
+					$(".page-3").show();
+				});
+				
+				//音乐开关
+				var played = true;
+				$(".bgm").on(CLICK,function(){
+					if(played){
+						played = false;
+						$(this).removeClass("play").addClass("pause");
+						createjs.Sound.stop();
+					}else{
+						played = true;
+						$(this).removeClass("pause").addClass("play");
+						createjs.Sound.play("sound",{loop: -1});
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
